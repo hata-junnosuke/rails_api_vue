@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'home#index'
   # 基本的にapi開発はapiやv1をurlにつけて管理することが多い
   namespace :api do
     resources :users, only: %i[create]
